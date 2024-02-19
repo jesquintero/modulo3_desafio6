@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="assets/css/style.css">
+    <title>Conversor de Monedas</title>
+</head>
+<body>
+    <main>
+        <div class="box">
+            <h2>Conversor de monedas Nacional</h2>
+        
+            <div class="ammount">
+                <h3>Pesos CLP</h3>
+                <input type="number" id="clp">
+            </div>
+            <div class="exchange">
+                <h3>Moneda a convertir:</h3>
+                <select name="xCurrency" id="xCurrency">
+                    <option value="dolar">Dolar USA</option>
+                    <option value="euro">Euro</option>
+                    <option value="uf">Unidad de Fomento</option>
+                </select>
+            </div>
+            <button type="button" id="convert">Convertir</button>
+            <div class="totalMonto">
+                <h3 id="total"></h3>
+            </div>
+        </div>
+        <div class="graph">
+            <canvas id="myChart" style="width:100%;max-width:900px"></canvas>
+        </div>
+    </main>
+    <script src="assets/js/script.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.9.4/Chart.js"></script>
+</body>
+</html>
